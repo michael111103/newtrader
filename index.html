@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NEWTRADER</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Tambahan untuk toggle menu */
+      .nav-links {
+        display: none;
+        flex-direction: column;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+
+      @media (min-width: 769px) {
+        .nav-links {
+          display: flex !important;
+          flex-direction: row;
+        }
+      }
+
+      .mobile-menu-icon {
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <header class="navbar">
       <div class="logo">NEW<span>TRADER</span></div>
+
+      <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
 
       <nav class="nav-links" id="navLinks">
         <a href="#">Testimoni</a>
@@ -23,8 +49,6 @@
         <button class="btn btn-outline">Login Premium</button>
         <button class="btn btn-primary">Join</button>
       </div>
-
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
     </header>
 
     <section class="hero">
