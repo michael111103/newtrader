@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   background-color: #000;
   padding: 1rem;
-  border-bottom: 2.5px solid #222; /* garis bawah lebih tebal */
+  border-bottom: 2.5px solid #222;
 }
 
 .navbar-top {
@@ -71,9 +71,9 @@ body {
   border-radius: 6px;
 }
 
-/* Bagian ini DIHAPUS supaya tombol join/login tidak tampil dua kali
+/* ✅ Ditambahkan: Tombol bawah untuk mobile */
 .nav-buttons-stacked {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 1rem;
@@ -85,7 +85,6 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 6px;
 }
-*/
 
 .btn {
   padding: 8px 16px;
@@ -152,7 +151,7 @@ body {
   border-radius: 999px;
 }
 
-/* Desktop styles */
+/* ✅ DESKTOP STYLES */
 @media (min-width: 769px) {
   .navbar {
     flex-direction: row;
@@ -186,9 +185,14 @@ body {
   .mobile-menu-icon {
     display: none !important;
   }
+
+  /* ✅ Sembunyikan tombol bawah di desktop */
+  .nav-buttons-stacked {
+    display: none !important;
+  }
 }
 
-/* Mobile styles */
+/* ✅ MOBILE STYLES */
 @media (max-width: 768px) {
   .mobile-menu-icon {
     font-size: 1.8rem;
@@ -207,5 +211,10 @@ body {
   .big-btn {
     width: 100%;
     font-size: 1.1rem;
+  }
+
+  /* ✅ Tampilkan tombol bawah hanya di mobile */
+  .nav-links.show + .nav-buttons-stacked {
+    display: flex;
   }
 }
