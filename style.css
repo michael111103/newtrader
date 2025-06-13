@@ -20,13 +20,12 @@ body {
   background-color: #000;
   border-bottom: 1px solid #111;
   flex-wrap: wrap;
-  position: relative;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  background: linear-gradient(to right, #5ee7df, #b490ca);
+  background: linear-gradient(to right, #ffffff, #00ff8f); /* putih ke hijau */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -75,15 +74,17 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(90deg, #5e61ff, #a66cff);
+  background: linear-gradient(90deg, #00ff8f, #00c37a); /* hijau */
   border: none;
   color: white;
-  box-shadow: 0 0 10px rgba(166, 108, 255, 0.4);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* cahaya putih */
+  transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
-  opacity: 0.9;
-  transform: scale(1.03);
+.btn-primary:hover,
+.btn-primary:active {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* makin terang saat hover */
+  transform: scale(1.05);
 }
 
 .hero {
@@ -98,7 +99,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #5e61ff, #a66cff);
+  background: linear-gradient(to right, #00ff8f, #ffffff); /* hijau ke putih */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -118,14 +119,6 @@ body {
   border-radius: 999px;
 }
 
-/* Tambahan untuk responsive hamburger menu */
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  color: white;
-  cursor: pointer;
-}
-
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -133,27 +126,15 @@ body {
   }
 
   .nav-links {
-    flex-direction: column;
-    width: 100%;
-    display: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin-top: 1rem;
-  }
-
-  .nav-links.show {
-    display: flex;
   }
 
   .nav-buttons {
     margin-top: 1rem;
     width: 100%;
     justify-content: flex-start;
-  }
-
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 1.2rem;
-    right: 2rem;
   }
 
   .hero h1 {
