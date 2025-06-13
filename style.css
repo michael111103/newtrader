@@ -13,13 +13,32 @@ body {
 }
 
 .navbar {
-  display: flex;
-  flex-direction: column;
   background-color: #000;
   padding: 1rem;
   border-bottom: 2.5px solid #222;
 }
 
+/* ✅ Struktur kontainer navbar desktop */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ✅ Mobile layout tetap ada */
 .navbar-top {
   display: flex;
   justify-content: space-between;
@@ -71,7 +90,6 @@ body {
   border-radius: 6px;
 }
 
-/* ✅ Ditambahkan: Tombol bawah untuk mobile */
 .nav-buttons-stacked {
   display: none;
   flex-direction: column;
@@ -154,18 +172,11 @@ body {
 /* ✅ DESKTOP STYLES */
 @media (min-width: 769px) {
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem 2rem;
   }
 
   .navbar-top {
     display: none;
-  }
-
-  .logo {
-    margin: 0;
   }
 
   .nav-links {
@@ -177,16 +188,15 @@ body {
     justify-content: center;
   }
 
+  .mobile-menu-icon {
+    display: none !important;
+  }
+
   .nav-buttons {
     display: flex;
     gap: 1rem;
   }
 
-  .mobile-menu-icon {
-    display: none !important;
-  }
-
-  /* ✅ Sembunyikan tombol bawah di desktop */
   .nav-buttons-stacked {
     display: none !important;
   }
@@ -213,7 +223,6 @@ body {
     font-size: 1.1rem;
   }
 
-  /* ✅ Tampilkan tombol bawah hanya di mobile */
   .nav-links.show + .nav-buttons-stacked {
     display: flex;
   }
