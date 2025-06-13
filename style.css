@@ -5,11 +5,12 @@
 }
 
 body {
-  font-family: sans-serif;
-  background: #000;
-  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: white;
   text-align: center;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -19,6 +20,7 @@ body {
   background: #000;
   align-items: center;
   flex-wrap: wrap;
+  border-bottom: 2px solid white; /* Menambahkan garis putih di bawah header */
 }
 
 .navbar .logo {
@@ -86,4 +88,39 @@ body {
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .signin, .unlock {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
 }
