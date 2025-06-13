@@ -146,6 +146,12 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Warna hijau solid untuk teks */
+.solid-green-text {
+  color: #00ff8f;
+  font-weight: bold;
+}
+
 .gradient-text {
   background: linear-gradient(to right, #00ff8f, #ffffff);
   -webkit-background-clip: text;
@@ -164,6 +170,7 @@ body {
 .big-btn {
   padding: 12px 24px;
   font-size: 1rem;
+  font-weight: 600; /* Sedikit ditebalkan */
   border-radius: 999px;
 }
 
