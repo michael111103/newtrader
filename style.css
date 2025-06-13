@@ -44,17 +44,22 @@ body {
   font-size: 0.9rem;
 }
 
-.signin, .unlock {
+/* Tombol dengan cahaya putih secara default */
+.signin, .unlock, .btn {
   padding: 8px 12px;
   border: none;
   background: white;
   cursor: pointer;
   border-radius: 4px;
+  color: #000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Efek cahaya putih */
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.unlock {
-  background: linear-gradient(90deg, #5ee7df, #b490ca);
-  color: white;
+/* Efek hijau saat hover pada tombol */
+.signin:hover, .unlock:hover, .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 180, 0.7); /* Efek cahaya hijau saat hover */
 }
 
 .hero {
