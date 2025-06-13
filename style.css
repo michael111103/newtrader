@@ -1,21 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: sans-serif;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #000;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #5ee7df, #b490ca);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.signin, .unlock {
+  padding: 8px 12px;
+  border: none;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.unlock {
+  background: linear-gradient(90deg, #5ee7df, #b490ca);
+  color: white;
+}
+
+.hero {
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #5ee7df, #b490ca);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.cta {
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #5ee7df, #b490ca);
+  border: none;
+  border-radius: 999px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
 }
