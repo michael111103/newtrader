@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NEWTRADER</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="navbar">
-    <div class="logo">NEWTRADER</div>
-    <nav class="nav-links">
-      <a href="#">Testimonials</a>
-      <a href="#">Features</a>
-      <a href="#">Pricing</a>
-      <a href="#">FAQ</a>
-      <a href="#">Blogs</a>
-      <a href="#">Contact</a>
-    </nav>
-    <div class="nav-buttons">
-      <button class="btn btn-outline">Sign In</button>
-      <button class="btn btn-primary">Unlock NT</button>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEWTRADER</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">NEW<span>TRADER</span></div>
 
-  <section class="hero">
-    <h1>Trade Like A <span class="gradient-text">Market Maker</span></h1>
-    <p>We deliver institutional-grade data to retail traders, simplified and made actionable with AI.</p>
-    <button class="btn btn-primary big-btn">Unlock NT →</button>
-  </section>
-</body>
+      <nav class="nav-links" id="navLinks">
+        <a href="#">Testimoni</a>
+        <a href="#">Fitur</a>
+        <a href="#">Pricing</a>
+        <a href="#">FAQ</a>
+        <a href="#">Blogs</a>
+        <a href="#">Hubungi</a>
+      </nav>
+
+      <div class="nav-buttons">
+        <button class="btn btn-outline">Premium</button>
+        <button class="btn btn-primary">Join</button>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <section class="hero">
+      <h1>Trade Like A <span class="gradient-text">Market Maker</span></h1>
+      <p>
+        We deliver institutional-grade data to retail traders, simplified and made actionable with AI.
+      </p>
+      <button class="btn btn-primary big-btn">Join NT →</button>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+      }
+    </script>
+  </body>
 </html>
