@@ -18,7 +18,6 @@ body {
   border-bottom: 2.5px solid #222;
 }
 
-/* ✅ Struktur kontainer navbar desktop */
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -38,7 +37,6 @@ body {
   gap: 1rem;
 }
 
-/* ✅ Mobile layout tetap ada */
 .navbar-top {
   display: flex;
   justify-content: space-between;
@@ -175,17 +173,30 @@ body {
     padding: 1rem 2rem;
   }
 
-  .navbar-top {
-    display: none;
+  .navbar-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+
+  .navbar-left {
+    grid-column: 1;
   }
 
   .nav-links {
+    grid-column: 2;
     display: flex !important;
     flex-direction: row;
     gap: 1.5rem;
-    flex: 1;
-    margin-top: 0;
     justify-content: center;
+    margin-top: 0;
+  }
+
+  .navbar-right {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   .mobile-menu-icon {
