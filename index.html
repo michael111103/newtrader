@@ -9,37 +9,21 @@
   <body>
     <header class="navbar">
       <div class="navbar-container">
-        <!-- Logo -->
-        <div class="logo">NEW<span>TRADER</span></div>
+        <div class="navbar-left">
+          <div class="logo">NEW<span>TRADER</span></div>
+          <nav class="nav-links" id="navLinks">
+            <a href="#">Testimoni</a>
+            <a href="#">Fitur</a>
+            <a href="#">Pricing</a>
+            <a href="#">FAQ</a>
+            <a href="#">Blogs</a>
+            <a href="#">Hubungi</a>
+          </nav>
+        </div>
 
-        <!-- Nav links (desktop & mobile dropdown) -->
-        <nav class="nav-links" id="navLinks">
-          <!-- Untuk tampilan mobile: logo dan tombol close -->
-          <div class="nav-mobile-header">
-            <div class="logo">NEW<span>TRADER</span></div>
-            <div class="close-icon" onclick="toggleMenu()">✕</div>
-          </div>
-
-          <a href="#">Testimoni</a>
-          <a href="#">Fitur</a>
-          <a href="#">Pricing</a>
-          <a href="#">FAQ</a>
-          <a href="#">Blogs</a>
-          <a href="#">Hubungi</a>
-
-          <!-- Tombol login & join (hanya muncul di mobile dropdown) -->
-          <div class="nav-buttons-stacked">
-            <button class="btn btn-outline">Login Premium</button>
-            <button class="btn btn-primary">Join</button>
-          </div>
-        </nav>
-
-        <!-- Tombol kanan atas (desktop & mobile burger) -->
         <div class="navbar-right">
-          <div class="nav-buttons-desktop">
-            <button class="btn btn-outline">Login Premium</button>
-            <button class="btn btn-primary">Join</button>
-          </div>
+          <button class="btn btn-outline">Login Premium</button>
+          <button class="btn btn-primary">Join</button>
           <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
         </div>
       </div>
