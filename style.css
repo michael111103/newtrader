@@ -20,13 +20,7 @@ body {
   background: #000;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 3px solid white; /* Garis bawah yang lebih tebal */
-  transition: border-bottom 0.3s ease; /* Menambahkan transisi untuk efek */
-}
-
-/* Menambahkan animasi garis bawah saat hover */
-.navbar:hover {
-  border-bottom: 3px solid #5ee7df; /* Mengubah warna garis menjadi hijau pada hover */
+  border-bottom: 3px solid white; /* Garis putih lebih tebal di bawah header */
 }
 
 .navbar .logo {
@@ -126,3 +120,20 @@ body {
 
   .cta {
     width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .signin, .unlock {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  /* Pastikan tombol lebih responsif */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+}
